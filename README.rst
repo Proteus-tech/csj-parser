@@ -1,5 +1,5 @@
 CSJ Parser for Python
-=========
+=====================
 
 .. image:: https://img.shields.io/pypi/v/csjparser.svg
     :target: https://pypi.python.org/pypi/csjparser

@@ -24,6 +24,7 @@ setup(
 
     description="CSJ for Python",
     long_description=read("README.rst"),
+    long_description_content_type="text/x-rst",
 
     packages=find_packages(exclude=('tests',)),
 
