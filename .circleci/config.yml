@@ -9,6 +9,8 @@ jobs:
       # specify the version you desire here
       # use `-browsers` prefix for selenium tests, e.g. `3.6.1-browsers`
       - image: circleci/python:3.6.1
+        environment:
+          PIPENV_VENV_IN_PROJECT: true
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -27,12 +29,12 @@ jobs:
             # fallback to using the latest cache if no exact match is found
       #      - v1-dependencies-
 
-      #- run:
-      #    name: install dependencies
-      #    command: |
-      #      python3 -m venv venv
-      #      . venv/bin/activate
-      #      pip install -r requirements.txt
+      - run:
+          name: install dependencies
+          command: |
+            python3 -m venv venv
+            . venv/bin/activate
+            pip install pytest
 
       #- save_cache:
       #    paths:
