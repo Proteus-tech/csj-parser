@@ -9,22 +9,12 @@ CSJ Parser for Python
     
 CJS Parser for Python
 
-Usage
------
+What is CSJ https://kirit.com/Comma%20Separated%20JSON
 
 Installation
 ------------
+``pip install csj_parser``
 
-Requirements
-^^^^^^^^^^^^
+or 
 
-Compatibility
--------------
-
-Licence
--------
-
-Authors
--------
-
-`csj_parser` was written by `HotNow CO, LTD. <admin@hot-now.com>`_.
+``pip install git+https://github.com/Proteus-tech/csj-parser.git``
