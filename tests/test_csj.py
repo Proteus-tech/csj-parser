@@ -87,6 +87,7 @@ class TestConvertCsjToDict():
             }
         ]
         result_dict = Csj.to_dict(csj_string)
+        print(result_dict)
         assert result_dict == list_of_dicts
 
 
@@ -97,7 +98,7 @@ class TestConvertDictToCsj():
             {
                 "key1": "value1",
                 "key2": "value2",
-                "key3": "null",
+                "key3": "value3",
                 "key4": "value4"
             },
             {
@@ -107,7 +108,7 @@ class TestConvertDictToCsj():
                 "key4": "value4"
             }
         ]
-        csj_string = '"key1","key2","key3","key4"\n"value1","value2","null","value4"\n"value1","value2","value3","value4"\n'
+        csj_string = '"key1","key2","key3","key4"\n"value1","value2","value3","value4"\n"value1","value2","value3","value4"\n'
         result_csj_string = Csj.from_dicts(list_of_dicts)
         assert result_csj_string == csj_string
     
@@ -128,6 +129,7 @@ class TestConvertDictToCsj():
         ]
         csj_string = '''"key1","key2","key3","key4"\n"value1",{}"key":"value"{},"value3",{}"key":"value"{}\n"value1","value2","value3","value4"\n'''.format('{', '}', '{', '}')
         result_csj_string = Csj.from_dicts(list_of_dicts)
+        print(result_csj_string)
         assert result_csj_string == csj_string
 
     def test_convert_dict_to_csj_on_null(self):
