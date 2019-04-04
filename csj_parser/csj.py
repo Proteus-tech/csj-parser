@@ -30,7 +30,6 @@ class Csj():
         csj_string = csj_string.join('"{}"'.format(key) for key in keys)
         csj_string = csj_string + '\n'
         for d in list_of_dicts:
-            values = json.dumps(list(d.values()))[1:-1]
+            values = json.dumps(list(d.values()), separators=(',',':'))[1:-1]
             csj_string = csj_string + values + '\n'
-        csj_string = csj_string.replace(" ", "")
         return csj_string
