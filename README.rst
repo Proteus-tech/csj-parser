@@ -1,8 +1,8 @@
 CSJ Parser for Python
 =====================
 
-.. image:: https://img.shields.io/pypi/v/csjparser.svg
-    :target: https://pypi.python.org/pypi/csjparser
+.. image:: https://img.shields.io/pypi/v/csj-parser.svg
+    :target: https://pypi.python.org/pypi/csj-parser
     :alt: Latest PyPI version
 .. image:: https://circleci.com/gh/panuwizzle/csj-parser.svg?style=svg
     :target: https://circleci.com/gh/panuwizzle/csj-parser
