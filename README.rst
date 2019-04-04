@@ -13,7 +13,7 @@ What is CSJ https://kirit.com/Comma%20Separated%20JSON
 
 Installation
 ------------
-``pip install csj_parser``
+``pip install csj-parser``
 
 or 
 
