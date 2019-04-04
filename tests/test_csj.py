@@ -64,7 +64,6 @@ class TestConvertCsjToDict():
             }
         ]
         result_dict = Csj.to_dict(csj_string)
-        print(result_dict)
         assert result_dict == list_of_dicts
 
     def test_convert_csj_to_dict_with_no_row(self):
@@ -110,7 +109,6 @@ class TestConvertDictToCsj():
         ]
         csj_string = '"key1","key2","key3","key4"\n"value1","value2","null","value4"\n"value1","value2","value3","value4"\n'
         result_csj_string = Csj.from_dicts(list_of_dicts)
-        print(result_csj_string)
         assert result_csj_string == csj_string
     
     def test_convert_dict_to_csj_multiple_row_and_contain_object(self):
@@ -130,7 +128,6 @@ class TestConvertDictToCsj():
         ]
         csj_string = '''"key1","key2","key3","key4"\n"value1",{}"key":"value"{},"value3",{}"key":"value"{}\n"value1","value2","value3","value4"\n'''.format('{', '}', '{', '}')
         result_csj_string = Csj.from_dicts(list_of_dicts)
-        print(result_csj_string)
         assert result_csj_string == csj_string
 
     def test_convert_dict_to_csj_on_null(self):
