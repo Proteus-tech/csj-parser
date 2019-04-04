@@ -23,7 +23,7 @@ setup(
     author_email="admin@hot-now.com",
 
     description="CSJ for Python",
-    long_description=read("README.rst"),
+    long_description=read("README.md"),
     long_description_content_type="text/x-rst",
 
     packages=find_packages(exclude=('tests',)),
