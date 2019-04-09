@@ -11,7 +11,7 @@ with open("README.md", "r", encoding="utf8") as fh:
 
 setup(
     name="csj_parser",
-    version="0.0.1",
+    version="0.0.2",
     url="https://github.com/Proteus-tech/csj-parser",
     license='MIT',
 
