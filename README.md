@@ -1,6 +1,6 @@
 # CSJ Parser for Python
 
-[![N|package](https://img.shields.io/pypi/v/csjparser.svg)](https://pypi.python.org/pypi/csj-parser) [![Build Status](https://circleci.com/gh/panuwizzle/csj-parser.svg?style=svg)](https://circleci.com/gh/panuwizzle/csj-parser)
+[![N|package](https://img.shields.io/pypi/v/csj-parser.svg)](https://pypi.python.org/pypi/csj-parser) [![Build Status](https://circleci.com/gh/panuwizzle/csj-parser.svg?style=svg)](https://circleci.com/gh/panuwizzle/csj-parser)
 
 Comma Separated JSON (CSJ) is a CSV like file format designed for stream processing where each cell is valid JSON. This makes it very similar to CSV, but without the problems that CSV has.
 
